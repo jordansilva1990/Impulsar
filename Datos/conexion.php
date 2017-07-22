@@ -2,7 +2,7 @@
 class Conexion
 {  private $usuario="root";
    private $clave="";
-   private $host="localhost";
+   private $host="127.0.0.1";
    private $bdatos="ClusterImpulsar";
    private $conex="";
    
