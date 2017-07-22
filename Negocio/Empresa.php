@@ -1,5 +1,5 @@
 <?php
-require_once("../Datos/datos.php");
+require_once("../Datos/conexion.php");
 class Empresa {
     private $id_empresa;
     private $nombre_empresa;

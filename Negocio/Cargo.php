@@ -1,5 +1,5 @@
 <?php
-require_once("../Datos/datos.php");
+require_once("../Datos/conexion.php");
 class Cargo {
     private $id_cargo;
     private $nombre_cargo;

@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-require_once("./Impulsar/Negocio/Asistente.php");
-require_once("./Impulsar/Negocio/Cargo.php");
-require_once("./Impulsar/Negocio/Empresa.php");
+require_once("../Negocio/Asistente.php");
+require_once("../Negocio/Cargo.php");
+require_once("../Negocio/Empresa.php");
 
 
 //Rescatando valores del formulario

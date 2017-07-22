@@ -1,5 +1,5 @@
 <?php
-require_once("../Datos/datos.php");
+require_once("../Datos/conexion.php");
 class Asistente {
     private $id_asistente;
     private $nombre_asistente;
