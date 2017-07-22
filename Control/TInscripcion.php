@@ -31,17 +31,19 @@ if(isset($_POST["OK"]) && $_POST["OK"]=="Ingresar")
 { //Trigger insercion
     $objCargo= new Cargo($id_cargo, $cargo);
     $objCargo->insertarCargo();
-    $objCargo=$objCargo->buscarCargo($cargo);
+    $resultcargo=$objCargo->buscarCargo($cargo);
+    $rowcargo = mysqli_fetch_array($resultcargo);
     
     $objEmpresa=new Empresa($id_empresa, $empresa);
     $objEmpresa->insertarEmpresa();
-    $objEmpresa=$objEmpresa->buscarEmpresa($empresa);
+    $resultempresa=$objEmpresa->buscarEmpresa($empresa);
+    $rowempresa = mysqli_fetch_array($resultempresa);
     
     $id_asistente=NULL; $codigoentrada="Test";$asistencia=False;
     
-    $objAsistente= new Asistente($id_asistente, $nombre, $apellidos, $email, $tel, $asistencia, $codigoentrada, $objCargo->getId_cargo(), $objEmpresa->getId_empresa());
+    $objAsistente= new Asistente($id_asistente, $nombre, $apellidos, $email, $tel, $asistencia, $codigoentrada, $rowcargo[0], $rowempresa[0]);
     $result=$objAsistente->insertarAsistente();
-    if($resul!="") header("Location:../login.php");
+    if($result!="") header("Location:../login.php");
   else
   { 
 
