@@ -63,7 +63,7 @@ class Empresa {
           public function buscarEmpresa($nombre_empresa) {
         $objConex= new Conexion();
 	    $objConex->abrirConexion();
-	    $sql="SELECT * FROM Empresas WHERE(NombreEmpresas='".$nombre_empresa."')";
+	    $sql="SELECT * FROM Empresas WHERE(NombreEmpresa='".$nombre_empresa."')";
 	    $vector=$objConex->ejecutarTransaccion($sql);
 	    return $vector;
 	}

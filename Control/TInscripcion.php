@@ -39,7 +39,7 @@ if(isset($_POST["OK"]) && $_POST["OK"]=="Ingresar")
     
     $id_asistente=NULL; $codigoentrada="Test";$asistencia=False;
     
-    $objAsistente= new Asistente($id_asistente, $nombre, $apellidos, $email, $telefono, $asistencia, $codigoentrada, $objCargo->getId_cargo(), $objEmpresa->getId_empresa());
+    $objAsistente= new Asistente($id_asistente, $nombre, $apellidos, $email, $tel, $asistencia, $codigoentrada, $objCargo->getId_cargo(), $objEmpresa->getId_empresa());
     $result=$objAsistente->insertarAsistente();
     if($resul!="") header("Location:../login.php");
   else
