@@ -43,10 +43,9 @@ if(isset($_POST["OK"]) && $_POST["OK"]=="Ingresar")
     $result=$objAsistente->insertarAsistente();
     if($resul!="") header("Location:../login.php");
   else
-
   { 
+
   }
- 
 
 }
 ?>
