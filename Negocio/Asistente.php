@@ -98,14 +98,7 @@ class Asistente {
         return $this->id_empresa;
     }
 
-        
     
-    
-    
-    
-    
-    
-   
     //CRUD
 	public function insertarAsistente() {
         $objConex= new Conexion();
