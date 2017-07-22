@@ -41,10 +41,6 @@ class Cargo {
             
             
 	}
-	
-	
-	
-	
 	public function listarComuna() {
         $objConex= new Conexion();
 	    $objConex->abrirConexion();
