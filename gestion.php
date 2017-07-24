@@ -64,20 +64,20 @@
             
           <div >
               <div style="margin-top: 200px;" >
-
+ <center>
                   <h1 style="color: white">Registrar asistencia</h1>
                             <form action='../Impulsar/Control/TInscripcion.php' method='POST'>
-
+                               
                                 <div class="form-group">
                                     <label for="emp" style="color: white">Codigo entrada:</label>
-                                    <input type="text" class="form-control" id="emp" placeholder="Empresa " name="emp">
-                             
+                                    <input type="text" class="form-control" id="emp" placeholder="Codigo Entrada " name="emp" style="max-width: 300px;">
+                                    </br>
 
-                                <button type="submit" class="tn btn-primary btn-lg " value="Ingresar"  name="OK" style="margin-left: 90px;">Registrar</button>
+                                <button type="submit" class="tn btn-primary btn-lg " value="Ingresar"  name="OK" style="margin-left: 15px;">Registrar</button>
 
                                 </form>
 
-
+                                </center>   
 
 
 
@@ -91,27 +91,7 @@
 
             </div>
 
-        <!--Footer-->
-        <footer id="footer" class="footer colorsbg">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="copyright text-left">
-                            <p>Diseño y Desarrollo CITT Viña del Mar</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="copyright text-right">
-                            <p>Cluster Impulsar | Quinta Region</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-
+        
 
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
