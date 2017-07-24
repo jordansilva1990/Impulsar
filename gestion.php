@@ -66,11 +66,11 @@
               <div style="margin-top: 200px;" >
  <center>
                   <h1 style="color: white">Registrar asistencia</h1>
-                            <form action='../Impulsar/Control/TInscripcion.php' method='POST'>
+                  <form action='../Impulsar/Control/TGestion.php' method='POST'>
                                
                                 <div class="form-group">
                                     <label for="emp" style="color: white">Codigo entrada:</label>
-                                    <input type="text" class="form-control" id="emp" placeholder="Codigo Entrada " name="emp" style="max-width: 300px;">
+                                    <input type="text" class="form-control" id="emp" placeholder="Codigo Entrada" name="entrada" style="max-width: 300px;">
                                     </br>
 
                                 <button type="submit" class="tn btn-primary btn-lg " value="Ingresar"  name="OK" style="margin-left: 15px;">Registrar</button>

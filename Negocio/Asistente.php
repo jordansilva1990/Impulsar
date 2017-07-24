@@ -12,6 +12,7 @@ class Asistente {
     private $id_empresa;
     
     public function __contruct() {}
+    
     public function Asistente($id_asistente, $nombre_asistente, $apellidos,$correo,$telefono, $asistencia,$codigoentrada,$id_cargo,$id_empresa ) {
         $this->id_asistente=$id_asistente;
         $this->nombre_asistente=$nombre_asistente;
@@ -23,6 +24,7 @@ class Asistente {
         $this->id_cargo=$id_cargo;
         $this->id_empresa=$id_empresa;
     }
+   
     //Setters
     function setId_asistente($id_asistente) {
         $this->id_asistente = $id_asistente;
@@ -107,10 +109,10 @@ class Asistente {
 	    $resul=$objConex->ejecutarTransaccion($sql);
 	    return $resul;
 	}
-	public function modificarAsistencia() {
+	public function modificarAsistencia($codigoentrada) {
         $objConex= new Conexion();
 	    $objConex->abrirConexion();
-	    $sql="UPDATE Asistentes SET Asistencia=True WHERE(CodigoEntrada='".$this->codigoentrada."')";
+	    $sql="UPDATE Asistentes SET Asistencia=True WHERE(CodigoEntrada='".$codigoentrada."')";
 	    $resul=$objConex->ejecutarTransaccion($sql);
 	    return $resul;
 	}
