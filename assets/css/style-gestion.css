@@ -501,7 +501,7 @@ textarea::-ms-input-placeholder
 /*For Home Section*/
 
 .home{
-  background: url(../images/header-bg.png) no-repeat top;
+  background: url(../images/header-lg.png) no-repeat top;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;

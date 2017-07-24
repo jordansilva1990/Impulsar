@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #FF9000;
+  background: url(../images/header-lg.png) no-repeat top;
 }
 
 h1 {

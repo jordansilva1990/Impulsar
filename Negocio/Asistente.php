@@ -130,5 +130,13 @@ class Asistente {
 	    $matrix=$objConex->ejecutarTransaccion($sql);
 	    return $matrix;
 	}
+        public function contarAsistente() {
+        $objConex= new Conexion();
+	    $objConex->abrirConexion();
+	    $sql="select count(*) from Asistentes;";
+	    $vector=$objConex->ejecutarTransaccion($sql);
+	    return $vector;
+	}
+        
 }
 ?>

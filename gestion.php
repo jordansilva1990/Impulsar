@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
         <!--Theme custom css -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style-gestion.css">
 
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -26,7 +26,7 @@
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <!--Home page style-->
-    <div id="home" class="home">
+    <div id="home" class="home"  >
         <header>
 
             <div class='preloader'><div class='loaded'>&nbsp;</div></div>
@@ -47,8 +47,9 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Registro</a></li>                                         
-                        <li><a href="login.html">Log in</a></li>
+                         <li ><a href="index.php">Inscripciones</a></li>
+                        <li class="active"><a href="gestion.php">Gestion</a></li>
+                        <li><a href="login.php">Log in</a></li>
 
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -57,58 +58,35 @@
 
         </header>
     <body>
-               
+           
         <div class="container" >
+                                               
+            
+          <div >
+              <div style="margin-top: 200px;" >
 
-               
+                  <h1 style="color: white">Registrar asistencia</h1>
+                            <form action='../Impulsar/Control/TInscripcion.php' method='POST'>
 
-                    <div class="col-md-6 col-md-offset-6 col-sm-12 col-xs-12">
-                        <div class="home-content" >
-
-                            <h1>Inscripción a Seminario</h1>
-                            <form action="/action_page.php">
-                                
                                 <div class="form-group">
-                                     <label for="emp">Empresa:</label>
+                                    <label for="emp" style="color: white">Codigo entrada:</label>
                                     <input type="text" class="form-control" id="emp" placeholder="Empresa " name="emp">
-                                </div>
-                                <div class="form-group">
-                                     <label for="car">Cargo:</label>
-                                    <input type="text" class="form-control" id="car" placeholder="Cargo" name="car">
-                                </div>
-                                <div class="form-group">
-                                     <label for="nombre">Nombre:</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
-                                </div>
-                                <div class="form-group">
-                                     <label for="apellidos">Apellidos:</label>
-                                    <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" name="apellidos">
-                                </div>
-                                <div class="form-group">
-                                     <label for="tel">Telefono:</label>
-                                    <input type="text" class="form-control" id="telefono" placeholder="Telefono" name="tel">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email:</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Correo" name="email">
-                                </div>
-                                
-                                <button type="submit" class="tn btn-primary btn-lg">Registrar</button>
-                                </form>       
+                             
 
-                            
-                            
+                                <button type="submit" class="tn btn-primary btn-lg " value="Ingresar"  name="OK" style="margin-left: 90px;">Registrar</button>
 
-                            <div class="available">
-                                <p>
-                                    Más información :
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </p>
-                            </div>
-                            
+                                </form>
+
+
+
+
+
                         </div>
                     </div>
+            
+            
+            
+            
               
 
             </div>

@@ -68,55 +68,7 @@
 
 
 
-                    <div class="col-md-6 col-md-offset-6 col-sm-12 col-xs-12">
-                        <div class="home-content" >
-
-                            <h1>Inscripción a Seminario</h1>
-                            <form action='../Impulsar/Control/TInscripcion.php' method='POST'>
-
-                                <div class="form-group">
-                                     <label for="emp">Empresa:</label>
-                                    <input type="text" class="form-control" id="emp" placeholder="Empresa " name="emp">
-                                </div>
-                                <div class="form-group">
-                                     <label for="car">Cargo:</label>
-                                    <input type="text" class="form-control" id="car" placeholder="Cargo" name="car">
-                                </div>
-                                <div class="form-group">
-                                     <label for="nombre">Nombre:</label>
-                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
-                                </div>
-                                <div class="form-group">
-                                     <label for="apellidos">Apellidos:</label>
-                                    <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" name="apellidos">
-                                </div>
-                                <div class="form-group">
-                                     <label for="tel">Telefono:</label>
-                                    <input type="text" class="form-control" id="tel" placeholder="Telefono" name="tel">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email:</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Correo" name="email">
-                                </div>
-
-
-                                <button type="submit" class="tn btn-primary btn-lg " value="Ingresar"  name="OK" style="margin-left: 90px;">Registrar</button>
-
-                                </form>
-
-
-
-
-                            <div class="available">
-                                <p>
-                                    Más información :
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
+                    
 
 
             </div>

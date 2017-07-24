@@ -30,24 +30,40 @@ if(isset($_POST["email"]) && $_POST["email"]!="")
 if(isset($_POST["OK"]) && $_POST["OK"]=="Ingresar")
 { //Trigger insercion
     $objCargo= new Cargo($id_cargo, $cargo);
-    $objCargo->insertarCargo();
     $resultcargo=$objCargo->buscarCargo($cargo);
     $rowcargo = mysqli_fetch_array($resultcargo);
+    if ($rowcargo==NULL){
+      $objCargo->insertarCargo();
+       $resultcargo=$objCargo->buscarCargo($cargo);
+       $rowcargo = mysqli_fetch_array($resultcargo);
+    }   
+    
     
     $objEmpresa=new Empresa($id_empresa, $empresa);
-    $objEmpresa->insertarEmpresa();
     $resultempresa=$objEmpresa->buscarEmpresa($empresa);
     $rowempresa = mysqli_fetch_array($resultempresa);
+    if ($rowempresa==NULL) {
+        $objEmpresa->insertarEmpresa();
+         $resultempresa=$objEmpresa->buscarEmpresa($empresa);
+         $rowempresa = mysqli_fetch_array($resultempresa);
+    }else{
     
-    $id_asistente=NULL; $codigoentrada="Test";$asistencia=False;
+    $id_asistente=NULL; $codigoentrada=" ";$asistencia=False;
+    $codigoentrada=substr($nombre,0,3).substr($apellidos,0,3);
     
     $objAsistente= new Asistente($id_asistente, $nombre, $apellidos, $email, $tel, $asistencia, $codigoentrada, $rowcargo[0], $rowempresa[0]);
+   
     $result=$objAsistente->insertarAsistente();
-    if($result!="") header("Location:../login.php");
-  else
-  { 
+    
+    if($result!=""){
+        header("Location:../login.php");
+    }
+    else{ 
+    } 
+    
+      
+    
+ 
 
-  }
-
-}
+}}
 ?>
